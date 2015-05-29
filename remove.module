@@ -1,0 +1,14 @@
+<?php
+
+function remove_form_alter(&$form, &$form_state, $form_id) {
+// print_r($form_id);
+    if($form_id == 'comment_node_page_form') {
+        // print '<pre>';
+        // print_r($form);
+        // print '</pre>';
+    $form['copy']['#access'] = 0;
+    $form['subject']['#title'] = 0;
+    $form['subject']['#type'] = 0;
+
+    }
+}

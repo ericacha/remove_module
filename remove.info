@@ -1,0 +1,5 @@
+name = Remove Subject
+description = Removes the subject line.
+package = Epicodus Example
+core = 7.x
+files[] = remove.module
